@@ -6,7 +6,7 @@
   <link href="./output.css" rel="stylesheet">
    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="m-0 p-0">
   <header class="h-25 w-full border flex justify-center">
     <div class="box-log mr-auto ml-14 flex items-center ">
         <img src="./images/logo-university-of-manchester.png" alt="" class="h-17 self-center">
@@ -39,16 +39,26 @@
      </div>
   </div>
   <div class="social-commons border h-200 w-full">
-    <div class="study border h-[50%] w-auto flex flex-col">
+    <div class="study  h-[50%] w-auto flex flex-col">
         <h1 class="m-4 text-3xl ml-10">Study</h1>
-        <div class="border h-[70%] w-[90%] ml-10 m-4 flex gap-2">
-          <div class=" border h-auto w-[68%] bg-pink-400 text-white  ">
-            <h1 class="text-2xl mt-1">Course and programme finder</h1> <br>
-                 <div>
+        <div class=" h-[70%] w-[90%] ml-10 m-4 flex gap-2">
+          <div class="  h-auto w-[68%] bg-violet-950 text-white  ">
+            
+            <div class="flex  w-full h-[90%]">
+                 <div class="   w-[50%] h-auto">
+                    <h1 class="text-2xl mt-1">Course and programme finder</h1> <br>
                     <p class="ml-6 mt-3 text-amber-300 cursor-pointer hover:underline">Undergraduate courses (2026 entry)</p>
                     <p class="ml-6 mt-3 text-amber-300 cursor-pointer hover:underline">Undergraduate courses (2025 entry)</p>
                     <p class="ml-6 mt-3 text-amber-300 cursor-pointer hover:underline">Taught master's courses</p>
                     <p class="ml-6 mt-3 text-amber-300 cursor-pointer hover:underline">Postgraduate research areas</p>
+                 </div>
+                 <div class="  w-[45%] text-center flex flex-col justify-center">
+                    <div class="select m-1 bg-white text-black rounded h-[40px] w-auto">Undergraduate courses (2026 entry)</div>
+                    <div class="select m-1 bg-white text-black rounded h-[40px] w-auto"><input type="search" class="grow w-[97%] h-[100%] outline-none" placeholder="enter keywords"></div>
+                    <div class="select m-1 bg-gray-600 text-white rounded h-[40px] w-auto cursor-pointer hover:bg-gray-500">search</div>
+                    <div >
+
+                 </div>
                  </div>
           </div>
           <div class=" border h-auto w-[30%]"></div>
